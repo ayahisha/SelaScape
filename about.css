@@ -1,0 +1,343 @@
+body {
+    background-color: #f7e7ce;
+    color: #3f2a1d;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    bottom: 0px;
+}
+
+.about-content {
+    padding: 40px 20px;
+}
+.hero-section .h1{
+    color: white;
+}
+ .about-section h3{
+    text-align: center;
+    align-items: center;
+margin-bottom: 10px;
+    font-size:4rem; /* Increased font size for headers */
+    color: #2e7d32;
+}
+.team-section h2{
+    text-align: center;
+    align-items: center;
+margin-bottom: 10px;
+    font-size: 4rem; /* Increased font size for headers */
+    color: #2e7d32;
+}
+ .milestones-section h2 {
+    text-align: center;
+    align-items: center;
+margin-bottom: 10px;
+    font-size: 4rem; /* Increased font size for headers */
+    color: #2e7d32;
+}
+ .contact-section h2 {
+    text-align: center;
+    align-items: center;
+margin-bottom: 10px;
+    font-size: 4rem; /* Increased font size for headers */
+    color: #2e7d32;
+}
+.hero-section .carousel-caption {
+    text-align: center;
+}
+
+.hero-section .carousel-caption h1 {
+    margin-bottom: 10px;
+}
+
+.hero-section .carousel-caption p {
+    margin: 0 auto;
+    width: fit-content;
+}.hero-section .carousel-caption {
+    text-align: center;
+}
+
+.hero-section .carousel-caption h1 {
+    margin-bottom: 10px;
+}
+
+.hero-section .carousel-caption p {
+    margin: 0 auto;
+    width: fit-content;
+}
+.about p, .about-section p, .milestones-section p {
+    font-size: 1.2rem; /* Increased font size for paragraphs */
+    line-height: 1.6;
+    color: #3f2a1d;
+    font-weight: 500;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    color: #3f2a1d;
+}
+
+.hero-section .carousel-caption {
+    text-align: center;
+}
+
+.hero-section .carousel-caption h1 {
+    font-size: 4rem; /* Increased font size for hero section header */
+    margin-bottom: 10px;
+}
+
+.hero-section .carousel-caption p {
+    font-size: 3rem; /* Increased font size for hero section paragraph */
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.about-card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #34c759;
+}
+
+.about-card h3 {
+    font-size: 2rem; /* Increased font size for h3 in about cards */
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.team-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #3f2a1d;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.team-member {
+    flex: 1 1 calc(25% - 30px);
+    text-align: center;
+    padding: 20px;
+    color: #3f2a1d;
+}
+
+.team-member h4 {
+    font-size: 1.5rem; /* Increased font size for team member titles */
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.team-member p {
+    font-size: 1.2rem; /* Increased font size for team member descriptions */
+    color: #3f2a1d;
+}
+
+.hero-section {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.about-section, .team-section, .milestones-section, .contact-section {
+    padding: 60px 20px;
+}
+
+.milestones-section .milestone {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.milestones-section .milestone h3 {
+    font-size: 2.5rem; /* Increased font size for milestone titles */
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.contact-section {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.contact-section a:hover {
+    color: #81ec9c;
+}
+
+.hero-section .carousel-inner {
+    padding-top: 0;
+}
+
+.hero-section img {
+    margin-top: 0;
+}
+
+.about h2 {
+    font-size: 3rem; /* Increased font size for "About Us" section title */
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2e7d32;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.about p {
+    font-size: 1.2rem; /* Increased font size for paragraphs in About Us section */
+    line-height: 1.8;
+    flex: 1;
+    font-weight: 500;
+}
+
+.about img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.about-reverse {
+    flex-direction: row-reverse;
+}
+
+.about-reverse img {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.about-content {
+    padding: 40px 20px;
+    background-color: #fff; /* Changed background color to white */
+}
+
+.hero-section h1, .about-section h2, .team-section h2, .milestones-section h2, .contact-section h2 {
+    text-align: center; /* Centered headers */
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 5rem; /* Increased font size for headers */
+    color: #2e7d32;
+}
+
+.about-content p, .about-section p, .milestones-section p {
+    font-size: 1.2rem; /* Increased font size for paragraphs */
+    line-height: 1.6;
+    color: #3f2a1d;
+    font-weight: 600; /* Increased font weight for paragraphs */
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    color: #3f2a1d;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-section {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-section, .team-section, .milestones-section, .contact-section {
+    animation: slideUp 1s ease-out;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-section.visible, .team-section.visible, .milestones-section.visible, .contact-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.about-card:hover {
+    animation: bounce 1s;
+}
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, p {
+    animation: textFadeIn 1s ease-out;
+}
+

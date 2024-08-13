@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arimo');
+
+        :root {
+            --coral: #eb9478;
+            --maroon: #8e2807;
+            --title: #493b76;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: "Arimo", sans-serif;
+        }
+
+        .wrapper {
+            margin-top: 5%;
+            width: 60%;
+            background-color: var(--coral);
+            box-shadow: 9px 13px 25px rgba(0, 0, 0, 0.18);
+            animation: slideUp 2000ms ease;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                visibility: visible;
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            width: 65%;
+            padding: 5% 10%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--title);
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 i {
+            margin-right: 10px;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        form > * {
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            min-height: 25px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            color: var(--maroon);
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        label {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: var(--maroon);
+        }
+
+        .name,
+        .address-info,
+        .cc-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .name div,
+        .address-info div,
+        .cc-info div {
+            width: 45%;
+            margin-bottom: 15px;
+        }
+
+        .address-info div,
+        .cc-info div {
+            width: 30%;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        button {
+            margin: 5px 0;
+            height: 30px;
+            width: 40%;
+            color: #cfc9e1;
+            background-color: #4a3b76;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: .3rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cfc9e1;
+            color: #4a3b76;
+            transform: scale(1.05);
+            transition: background-color 0.55s, color 0.55s, transform 0.55s;
+        }
+
+        input:focus,
+        button:focus {
+            outline: none;
+        }
+
+        @media (max-width: 736px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            .container {
+                width: 100%;
+                padding: 5%;
+            }
+
+            .btns {
+                align-items: center;
+            }
+
+            button {
+                width: 50%;
+            }
+
+            form h1 {
+                text-align: center;
+            }
+
+            .name div,
+            .address-info div,
+            .cc-info div {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .street,
+            .cc-num {
+                text-align: center;
+            }
+
+            input {
+                margin: 5px 0;
+                min-height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="/submit-form" method="post">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" id="f-name" name="f-name" required>
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" id="l-name" name="l-name" required>
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="address">Street</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <input type="text" id="card-num" name="card-num" required>
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="expire">Exp</label>
+                        <input type="text" id="expire" name="expire" required>
+                    </div>
+                    <div>
+                        <label for="security">CCV</label>
+                        <input type="text" id="security" name="security" required>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button type="submit">Purchase</button>
+                    <button type="button" onclick="window.history.back()">Back to cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
